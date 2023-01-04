@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+    list-style: none;
+  }
+
+body{
+    margin: 0;
+    font-family: "Lucida Grande";
+}
+
+a{
+    text-decoration: none;
+}
+
+.clear{
+    clear: left;
+}
+
+.container{
+    max-width: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-wrapper{
+    padding: 100px 0 100px 0;
+    color: black;
+    text-align: center;
+}
+
+.top-wrapper h1{
+    
+    font-size: 100px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.top-wrapper h2{
+    font-size: 60px;
+}
+
+.top-wrapper span{
+    color: #FFD700;
+}
+
+.text-wrapper{
+    background-color: #b3aeb5;
+    text-align: center;
+    padding: 40px ;
+}
+
+.text-wrapper p{
+    margin: 10px;
+    padding-top: 10px;
+}
+
+
+.btn{
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.fa{
+    margin-right: 5px;
+}
+
+header{
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    width: 124px;
+    margin-top: 20px;
+}
+
+.logo-ninjaken{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.header-left{
+    float: left;
+}
+
+.header-right{
+    float: left;
+    margin-right: -25px;
+    margin-left: 30px;
+}
+
+.header-right a{
+    line-height: 65px;
+    padding: 0 15px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-right a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon{
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+}
+
+.lesson-wrapper{
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    text-align: center;
+}
+
+.heading{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.heading h3{
+    font-weight:bold;
+    color: black;
+    margin-bottom: 80px;
+}
+
+.lessons{
+    display: flex;
+}
+
+.lesson{
+    float: left;
+    width: 25%;
+    flex: auto;
+    text-align: center;
+}
+
+.lesson-icon{
+    position: relative;
+}
+
+.lesson-icon img{
+    width: 200px;
+}
+
+.lesson-icon p{
+    position: absolute;
+    top: 37%;
+    width: 100%;
+    color: white;
+}
+
+.text-contents{
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+input, textarea{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+    border-radius: 10px;
+  }
+
+.message-wrapper{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: #b3aeb5;
+}
+
+.message{
+    color: black;
+    padding: 15px 40px;
+    background-color: #FFD700;
+    cursor: pointer;
+    box-shadow: 0 7px #726417;
+}
+
+.message:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+.footer-logo{
+    float: left;
+}
+
+.footer-logo img{
+    width: 125px;
+}
+
+
+footer{
+    background-color: black;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 165px;
+    width: 100%;
+}
+
+.footer-list{
+    float: right;
+}
+
+.footer-list li{
+    padding-bottom: 20px;
+}

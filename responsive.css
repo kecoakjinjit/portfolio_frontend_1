@@ -1,0 +1,70 @@
+/* FOR TABLETS */
+@media all and (max-width: 1000px){
+    .lesson{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .top-wrapper h1{
+        font-size: 32px;
+    }
+
+    .heading h2{
+        font-size: 20px;
+    }
+
+    .lessons{
+        flex-wrap: wrap;
+    }
+
+    .lesson{
+        width: 50%;
+    }
+}
+
+/* FOR SMARTPHONE */
+@media all and (max-width: 670px){
+    .lesson{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    input, textarea{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 18px;
+        border: 1px solid #dee7ec;
+        border-radius: 10px;
+      }
+
+    .top-wrapper{
+        text-align: center;
+    }
+
+    .header-right{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .top-wrapper h1{
+        font-size: 40px;
+        line-height: 36px;
+    }
+
+    .top-wrapper p{
+        font-size: 24px;
+        line-height: 20px;
+    }
+}
