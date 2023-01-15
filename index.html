@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio pertama">
+    <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, React, Git">
+    <meta name="author" content="Kecoak Jinjit">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project 1</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="picture/Ninja Ken.png" type="image/png">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="path-to-the-image">
+    <meta property="og:url" content="https://github.com/kecoakjinjit/portfolio_frontend_1">
+    <meta property="og:title" content="Progate | Portfolio Pertamaku...">
+    <meta property="og:description" content="Ini adalah portfolio Frontend pertamaku...">
 </head>
 <body>
+    
     <header>
         <div class="container">
             <div class="header-left">
@@ -44,25 +54,59 @@
                 <h3>Proyek Contoh</h3>
             </div>
             <div class="lessons">
-                <div class="lesson">
+                <div class="lesson fade" id="openModalButton">
                     <div class="lesson-icon">
-                        <img src="picture/1.png">
+                        <img src="picture/1.png" class="gambar">
                     </div>
                     <p class="text-contents">lorem ipsum</p>
                 </div>
-                <div class="lesson">
+                <div class="lesson fade" id="openModalButton">
                     <div class="lesson-icon">
-                        <img src="picture/2.png">
+                        <img src="picture/2.png" class="gambar">
                     </div>
                     <p class="text-contents">Lorem ipsum</p>
                 </div>
-                <div class="lesson">
+                <div class="lesson fade" id="openModalButton">
                     <div class="lesson-icon">
-                        <img src="picture/3.png">
+                        <img src="picture/3.png" class="gambar">
                     </div>
                     <p class="text-contents">Lorem Ipsum</p>
                 </div>
+                <div class="lesson fade" id="openModalButton">
+                    <div class="lesson-icon">
+                        <img src="picture/gurudomba-flying.png" class="gambar">
+                    </div>
+                    <p class="text-contents">lorem ipsum</p>
+                </div>
+                <div class="lesson fade" id="openModalButton">
+                    <div class="lesson-icon">
+                        <img src="picture/gurudomba.png" class="gambar">
+                    </div>
+                    <p class="text-contents">lorem ipsum</p>
+                </div>
+                <div class="lesson fade" id="openModalButton">
+                    <div class="lesson-icon">
+                        <img src="picture/happy-ninjaken.png" class="gambar">
+                    </div>
+                    <p class="text-contents">lorem ipsum</p>
+                </div>
+                <div class="lesson fade" id="openModalButton">
+                    <div class="lesson-icon">
+                        <img src="picture/ninjaken.png" class="gambar">
+                    </div>
+                    <p class="text-contents">lorem ipsum</p>
+                </div>
+                    <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="updateSlide(1)">&#10095;</a>
                 <div class="clear"></div>
+                <div id="myModal">
+                    <div id="modalContent">
+                      <span id="closeModalIcon">&times;</span>
+                      <h2>Deskripsi</h2>
+                      <p>ini adalah pop up deskripsi dari project.</p>
+                      <p>Ayo menjadi seorang Frontend Developer!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -70,13 +114,33 @@
         <div class="container">
             <div class="heading">
                 <h3>Hubungi Saya</h3>
-                <input type="text" value="Email (Diperlukan)">
-                <p></p>
-                <textarea>Message (Diperlukan)</textarea>    
+                <p id="result"></p>
+                <input type="text" placeholder="Email (Diperlukan)" id="inputan">
+                <p id="result"></p>
+                <textarea placeholder="Message (Diperlukan)" id="inputan"></textarea>    
             </div>
-            
-            
-            <span class="btn message">Kirim</span>
+            <span class="btn message" id="result" onclick="calculate()">Kirim</span>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="container">
+            <div class="heading">
+                <h3>FAQ</h3>
+                <button class="accordion">1. Apakah website ini dibangun sendiri?</button>
+                <div class="panel">
+                    <p>oh tentu saja, saya masih tahap belajar!</p>
+                </div>
+
+                <button class="accordion">2. Apa saja yang sedang kamu pelajari?</button>
+                <div class="panel">
+                    <p>Segala hal mengenai Frontend Developer</p>
+                </div>
+
+                <button class="accordion">3. Apakah kamu sudah cukup puas?</button>
+                <div class="panel">
+                    <p>Tentu saja belum!</p>
+                </div>   
+            </div>
         </div>
     </div>
     <footer>
@@ -94,5 +158,9 @@
         </div>
         
     </footer>
+    <div id="demo">
+        <p id="paragraph">Hello World!</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
