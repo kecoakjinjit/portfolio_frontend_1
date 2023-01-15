@@ -1,9 +1,9 @@
 /* FOR TABLETS */
 @media all and (max-width: 1000px){
-    .lesson{
-        width: 50%;
+     .lesson{
+        width: 100%;
         margin-bottom: 50px;
-    }
+    } 
 
     .top-wrapper h1{
         font-size: 32px;
@@ -13,13 +13,23 @@
         font-size: 20px;
     }
 
-    .lessons{
+    /* .lessons{
         flex-wrap: wrap;
-    }
+    } */
 
-    .lesson{
-        width: 50%;
-    }
+    .prev,
+    .next {
+        position: absolute;
+        top: 1250px;
+        left: 33%;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+}
+
+    
 }
 
 /* FOR SMARTPHONE */
@@ -66,5 +76,30 @@
     .top-wrapper p{
         font-size: 24px;
         line-height: 20px;
+    }
+
+    .prev,
+  .next {
+    position: absolute;
+    top: 1460px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0px 3px 3px 0;
+    user-select: none;
+    }
+
+    .prev{
+        left: 15%;
+    }
+
+    .next{
+        left: 65%;
+    }
+
+    .lesson-icon img{
+        width: 50%;
+        height: 200px;
+        object-fit: contain;
     }
 }
